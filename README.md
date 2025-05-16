@@ -3,6 +3,8 @@
 A user-friendly desktop application designed to help you view, edit, and modify Hollow Knight save files, including geo, health, and other game attributes.
 This tool simplifies the process of editing Hollow Knight save files, making it easy to customize your gameplay experience.
 
+![Hollow Knight Editor Screenshot](https://github.com/Kurdeus/hollow-knight-windows/blob/main/screenshot/app.jpg?raw=true)
+
 ## Features
 
 - **Simple Interface**: Easy-to-use JSON editor for modifying save files
