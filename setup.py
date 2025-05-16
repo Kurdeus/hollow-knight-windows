@@ -284,8 +284,17 @@ Save File Locations:
         self.file_label.pack(fill=tk.X, side=tk.LEFT, expand=True)
         
     def open_file(self):
+        # Check if default Hollow Knight save directory exists
+        default_save_dir = os.path.join(os.environ['USERPROFILE'], 'AppData', 'LocalLow', 'Team Cherry', 'Hollow Knight')
+        
+        if os.path.exists(default_save_dir):
+            initial_dir = default_save_dir
+        else:
+            initial_dir = os.path.expanduser("~")
+            
         file_path = filedialog.askopenfilename(
             title='Open Save File',
+            initialdir=initial_dir,
             filetypes=[('Hollow Knight Save Files', '*.dat'), ('All Files', '*.*')]
         )
         
