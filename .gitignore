@@ -1,0 +1,10 @@
+.venv
+.vscode
+__pycache__
+*.pyc
+.DS_Store
+.github
+dist
+build
+*.spec
+*.dat
